@@ -1,0 +1,825 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.container {
+	margin: 0 10px;
+	}
+	/* start Nav section */
+    nav{
+		background-color: #000;
+
+	}
+	nav>.container{
+	
+		color: #fff;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+		
+	}
+	nav>.container #logo{
+		
+		flex-basis: 48%;
+			
+		}
+	nav>.container #logo img{
+		
+    width: 100%
+		
+	}
+	nav>.container #main-menu{
+		background-color:rgba(0, 0, 0, 0.308);
+		position: fixed;
+		width: 85vh;
+		right: 2%;
+		top: 10%;
+		text-align: center;
+		border-top:2px solid #FAB707;
+		border-radius: 10px;
+		z-index: 10;
+		/* flex-direction: column;
+		justify-content: center;
+		align-items: center; */
+
+		transition: top 3s ease-in-out;
+		display: none;
+		box-shadow: 1px 0px 10px -2px #fff;
+
+		
+	}
+	nav>.container #main-menu li{
+		list-style: none;
+		border-bottom: thin solid #ECECEC;
+		padding: 15px ;
+		
+		
+	}
+	nav>.container #main-menu li:last-child{
+		border: 0;
+	}
+	nav>.container #main-menu li a{
+		text-decoration: none;
+		color: #000;
+		text-transform: uppercase;
+		font-size: 20px;
+		color: #fff;
+		
+		
+	}
+	nav>.container #main-menu li:hover{
+		
+	background-color: #FAB707;
+	color: #fff;
+	transition: all 0.5s ease-out;
+	
+		
+	}
+	
+	nav #open-menu{
+		cursor: pointer;
+		
+	}
+
+	/* End Nav section */
+	/* start header section */
+	section#header{
+		min-height: 550px;
+		position: relative;
+		/* background-image:url('../images/header-bg.jpg'), linear-gradient(to right, RGB(0, 0, 0), RGB(0, 0, 0));
+		background-size: 100% 100%,100% 100%;
+		background-repeat: no-repeat; */
+		/* position: relative; */
+		background-image:url('../images/header-bg.jpg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+       background-size: 100% 100%;
+	   padding: 20px 0;
+	}
+	section#header .container::before,section#support .container::before{
+		content: '';
+        display: block;
+		 position: absolute;
+		top: 0;
+		left: 0;
+        width: 100%;
+       height: 100%;
+	   background-color:#000000ba
+       
+       
+	}
+	section#header .container{
+		padding-top: 40px;
+		
+	}
+
+	section#header .container>article{
+		color: #fff;
+		position: relative;
+		z-index: 15;
+		text-align: center;
+		
+
+	}
+	section#header .container>article>h5{
+
+		font-weight: 400;
+		margin: 20px 0;
+		text-transform: uppercase;
+		color: #ECECEC;
+		
+
+	}
+	section#header .container>article>h1{
+         font-size: 1.8rem;
+		font-weight: 600;
+		margin: 20px 0;
+		text-transform: uppercase;
+		
+
+	}
+	
+	
+	section#header .container>article a{
+		cursor: pointer;
+		position: relative;
+		z-index: 15;
+		background-color: #FAB707;
+		color: #ffff;
+		text-decoration: none;
+		padding: 8px 20px;
+		top: 30px;
+
+	   
+
+   }
+   section#header .container>form{
+	   position: relative;
+	   z-index: 15;
+	   background-color: rgba(0, 0, 0, 0.199);
+	   border: thin solid #7b7a7a;
+	   margin-top: 80px;
+	   
+
+
+   }
+   section#header .container>form>h3{
+	   color: #fff;
+	   margin: 20px 0;
+	   margin-left: 70px;
+	   font-weight: bold;
+	   font-size: 20px;
+	 
+   }
+   section#header .container>form input,section#header .container>form select ,section#header .container>form button{
+	   display: block;
+	   margin: 10px auto;
+	   width: 70%;
+	   padding: 10px 10px;
+	   border-radius: 3px;
+   }
+   section#header .container>form button{
+	cursor: pointer;
+	background-color: #FAB707;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 20px;
+
+
+
+   }
+   section#header .container>form button:hover{
+	   opacity: .8;
+   }
+   section#header .container>form>.group-input{
+	   display: flex;
+	   justify-content: space-between;
+	   align-items: center;
+	   flex-wrap: wrap;
+	   width: 70%;
+	   margin: 0 auto;
+
+   }
+   section#header .container>form>.group-input input,section#header .container>form>.group-input select{
+	   flex-basis: 47%;
+   }
+
+
+	
+	/* End header section */
+
+	/* start services section */
+	section#services .container>h2{
+		text-align: center;
+		margin-top: 20px;
+		color: #000;
+
+	}
+	section#services .container>p{
+		text-align: center;
+		margin: 10px;
+		color:#7b7a7a;
+
+	}
+
+	section#services .container>.services-card div{
+		background-color: #EEECF6;
+		margin-top: 20px;
+		padding: 15px;
+		border-radius: 3px;
+	}
+	section#services .container>.services-card div .icons{
+		display: flex;
+	justify-content: space-between;
+		align-items: center;
+
+	}
+	section#services .container>.services-card div .icons img{
+		/* flex-basis: 50%; */
+	}
+	section#services .container>.services-card div .icons h4{
+		flex-basis: 92%;
+	}
+	
+	section#services .container>.services-card div p{
+		color: #7b7a7a;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	/* End services section */
+
+	/* start about us section */
+
+	section#about-us{
+		margin-top: 30px;
+	}
+	section#about-us>.container>article h2{
+		margin-top: 40px ;
+		text-align: center;
+	}
+	section#about-us>.container>article h6{
+		margin: 20px ;
+		text-align: center;
+		color: #000;
+		font-size: .9rem;
+	}
+	section#about-us>.container>article p{
+		margin: 10px ;
+		text-align: justify;
+		color: #7b7a7a;
+	}
+	section#about-us>.container>article a{
+		margin: 20px auto ;
+		text-decoration: none;
+		color:#fff;
+		background-color: #FAB707;
+		padding: 10px 0;
+		display: block;
+		text-align: center;
+		width: 30%;
+	}
+	section#about-us>.container>figure{
+
+		width: 500px;
+		margin: auto;
+	}
+	section#about-us>.container>figure img{
+		width: 100%;
+	}
+
+	/* End about us section */
+	/* start car model section */
+	section#car-model{
+		margin-top: 30px;
+	}
+	section#car-model>.container>article h2{
+		margin-top: 40px ;
+		text-align: center;
+	}
+	
+	section#car-model>.container>article p{
+		margin: 10px ;
+		text-align: justify;
+		color: #7b7a7a;
+	}
+	
+	section#car-model>.container .model-container>div>span{
+        display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 90%;
+		margin: 10px auto;
+
+	}
+	section#car-model>.container>span{
+		display: hidden;
+	}
+	section#car-model>.container .model-container>div>span h2{
+		color:#FAB707;
+	}
+	section#car-model>.container .model-container>div>h6{
+		color:#7b7a7a;
+		margin: 5px 0;
+		font-size: 14px;
+		
+	}
+	section#car-model>.container .model-container>div>a{
+		margin: 20px 0 ;
+		text-decoration: none;
+		color:#fff;
+		background-color: #000;
+		padding: 10px 0;
+		display: block;
+		text-align: center;
+		width: 30%;
+	}
+	section#car-model>.container .model-container>div p{
+		color:#7b7a7a
+	}
+	section#car-model>.container .model-container figure{
+
+		width: 500px;
+		margin: auto;
+	}
+	section#car-model>.container .model-container figure img{
+		width: 100%;
+	}
+	/* End car model section */
+	/* start support section */
+	section#support{
+		position: relative;
+		background-image: url('../images/callaction-bg.jpg');
+		height: 400px;
+		background-size: 100% 100%;
+	}
+	section#support>.container>article{
+		position: relative;
+		z-index: 15;
+		padding: 90px;
+		text-align: center;
+	}
+
+	section#support>.container>article h2{
+		color: #fff;
+		margin: 10px auto;
+		display: block;
+
+	}
+	section#support>.container>article p{
+		color:#ECECEC;
+		margin-top: 10px;
+
+	}
+	section#support>.container>article a{
+		margin: 20px auto ;
+		text-decoration: none;
+		color:#FAB707;
+		background-color:transparent;
+		padding: 10px 0;
+		display: block;
+		border: 2px solid #FAB707;
+		text-align: center;
+		width: 200px;
+
+	}
+
+	/* end support section */
+
+	/* start blog section */
+	section#blog{
+	
+		background-color: #EEECF6;
+	}
+	
+	section#blog>.container>article{
+		padding: 60px;
+		text-align: center;
+	}
+
+	section#blog>.container>article h2{
+		color: #000;
+		margin: 10px auto;
+		display: block;
+
+	}
+	section#blog>.container figure{
+	  width: 80%;
+	  margin:15px auto;
+	border: 1px solid #000;
+	  
+
+	}
+	section#blog>.container figure img{
+		width:100%;
+		
+		
+  
+	  }
+
+	  section#blog>.container figure> p{
+		
+		color:#7b7a7a;
+		margin: 10px 0;
+	}
+	section#blog>.container figure>.review{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width:100%;
+		padding: 10px;
+	}
+	section#blog>.container figure> .review p{
+		
+		color:#7b7a7a;
+		margin: 10px 0;
+		
+	}
+
+    section#blog>.container figure> #date{
+		background-color: #000;
+		color:#EEECF6;
+		display: inline-block;
+		margin: 10px 0;
+		padding: 3px;
+	}
+	
+	
+	/* End blog section */
+	/* start footer section */
+
+	footer{
+		background-color: #000;
+		color: #fff;
+		margin-top: -10px;
+		padding: 20px;
+	}
+
+	footer>.container div{
+		margin: 0 auto;
+		padding: 5px;
+		text-align: center;
+	
+		
+	}
+	footer>.container  p{
+		
+		color:#7b7a7a;
+		text-align: center;
+		margin: 40px;
+		
+	}
+	footer>.container div a{
+		text-decoration: none;
+		
+
+	}
+	footer>.container div  h5{
+		color: #fff;
+		font-weight: 400;
+		font-size: 2rem;
+		margin:10px auto;
+	}
+	footer>.container div h6{
+		color:#7b7a7a;
+		font-size: 1.1rem;
+		margin:5px auto;
+		
+	}
+	footer>.container div a input{
+		outline: 0;
+		border: 0;
+		padding: 8px 15px;
+		margin-top: 20px;
+	}
+	footer>.container div .con-icons{
+		width: 50px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+
+	}
+	footer>.container div a i.icons{
+		background-color: #FAB707;
+		color: #fff;
+		font-size: 1rem;
+		padding: 8px;
+		height: 100%;
+		position: relative;
+		top: 1px;
+		
+		
+
+	}  
+	footer>.container div a>div{
+	
+		
+	}
+	/* End footer section */
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+	.container {
+		width: 520px;
+		margin: 0 auto;
+	}
+
+	nav>.container #main-menu{
+		width: 63vh;
+		right: 5%;
+		top: 11%;
+		box-shadow: none;
+
+	}
+
+	/* start about us section */
+	section#about-us>.container{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+	}
+	section#about-us>.container>article{
+		flex-basis: 70%;
+		margin-left: 15px;
+	}
+
+	section#about-us>.container>article h2,section#about-us>.container>article h6{
+		text-align: start;
+	}
+	
+	section#about-us>.container>article p{
+		margin: 10px ;
+		text-align: justify;
+		color: #7b7a7a;
+	}
+	section#about-us>.container>article a{
+		margin: 20px 0 ;
+	
+	
+		
+	}
+	/* end about us section */
+	/* start car model section */
+	
+	
+	section#car-model>.container .model-container{
+        display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+
+	}
+	section#car-model>.container>span{
+		box-shadow: 50px 10px #FAB707,80px 10px  #FAB707,110px 10px  #FAB707;
+		width: 15px;
+		height: 15px;
+		display: block;
+		color: #FAB707;
+		margin: 20px auto;
+		text-align: center;
+	}
+	section#car-model>.container>span:hover{
+		background-color: #7b7a7a;
+	}
+	section#car-model>.container .model-container>div{
+		flex-basis: 40%;
+	}
+	
+	section#car-model>.container .model-container figure{
+		flex-basis: 48%;
+		margin: auto;
+	}
+	section#car-model>.container .model-container figure img{
+		width: 100%;
+	}
+	/* End car model section */
+
+	/* start blog  section*/
+	section#blog>.container>.blog-cards{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap:wrap ;
+
+  
+	  }
+	  section#blog>.container>.blog-cards figure{
+		  flex-basis: 49%;
+	  }
+	/* end blog section */
+		/* start footer section */
+
+		footer>.container .footer-social{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+
+		
+			
+		}
+		footer>.container .footer-social div{
+			flex-basis: 40%;
+		}
+  
+		/* End footer section */
+	
+
+  }
+
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.container {
+		width: 720px;
+	}
+	
+	nav>.container #logo{
+		
+		flex-basis: 20%;
+		/* margin-right: 100px; */
+		}
+		
+		
+	nav>.container #main-menu{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: transparent;
+		border: 0;
+		position: static;
+		flex-basis: 65%;
+		padding: 0 ;
+		
+		
+
+		
+	}	
+	
+	nav>.container #main-menu li{
+		border: 0;
+		padding:15px 5px;
+		flex-basis: 15%;
+
+	}
+	nav>.container #main-menu li a{
+		font-size: 12px;
+		
+		
+	}
+    nav #open-menu{
+	display: none;
+	
+}	
+
+/* start header section */
+section#header {
+	min-height: 450px;
+}
+section#header .container{
+	margin-top: -140px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+section#header .container>article{
+
+	text-align: start;
+	flex-basis: 70%;
+	
+
+}
+
+
+section#header .container>form{
+	flex-basis: 40%;
+
+}
+section#header .container>form input,section#header .container>form select ,section#header .container>form button{
+	margin: 8px auto;
+	width: 70%;
+	padding: 8px 10px;
+
+}
+
+/* End header section */
+	
+
+/* start services section  */
+section#services .container>.services-card{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	}
+
+	section#services .container>.services-card div{
+		flex-basis: 49%;
+		margin-top: 20px;
+		padding: 15px;
+	}
+
+	/* end services section */
+
+		/* start blog  section*/
+		section#blog>.container>.blog-cards{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap:wrap ;
+	
+	  
+		  }
+		  section#blog>.container>.blog-cards figure{
+			  flex-basis: 24%;
+		  }
+		/* end blog section */
+
+			/* start footer section */
+
+			footer>.container .footer-social{
+				display: flex;
+				justify-content: space-between;
+				text-align: left;
+				flex-wrap: wrap;
+	
+			
+				
+			}
+			footer>.container .footer-social div{
+				flex-basis: 19%;
+				text-align: left;
+			}
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.container {
+		width: 940px;
+	}
+	nav>.container #main-menu li{
+		padding:15px 0;
+		flex-basis: 25%;
+
+	}
+	
+	nav>.container #main-menu li{
+		padding:15px 6px;
+	
+	}
+	nav>.container #main-menu li a{
+		font-size: 16px;
+		
+		
+	}
+
+	/* start services section  */
+	section#services .container>.services-card{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		}
+	
+		section#services .container>.services-card div{
+			flex-basis: 32%;
+			background-color: #EEECF6;
+			margin-top: 20px;
+			padding: 15px;
+		}
+	
+		section#services .container>.services-card div p{
+			color: #7b7a7a;
+		}
+
+
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+	.container {
+		width: 1140px;
+	}
+	
+}
+
+@media (min-width: 1400px) { 
+	.container {
+		width: 1340px;
+	}
+	nav>.container #main-menu li a{
+		font-size: 20px;
+		
+		
+	}
+}
